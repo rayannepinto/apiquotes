@@ -7,6 +7,6 @@ server.get('/quotes', (req,res) => {
 return res.json(quotes)
 });
 
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
 console.log('Servidor está funcionando...')
 });
